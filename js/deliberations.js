@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (target.className == "yes-button") {
       let pnmKey = document.querySelector("#pnm-name").innerHTML.replace(" ", "").toLowerCase();
 
-      db.ref("pnm/" + pnmKey + "/votes/shan11").set("yes");
+      db.ref("pnm/" + pnmKey + "/votes/" + brotherId).set("yes");
       document.querySelectorAll("button").forEach(function(button) {
         button.style.display = "none";
       });
