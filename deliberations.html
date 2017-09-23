@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deliberations</title>
+
+  <style>
+    #voting-frame {
+      display: none;
+    }
+	#pnm-name {
+	  font-family: sans-serif;
+	  font-size: 28px;
+	  font-weight: bold;
+	  text-align: center;
+	}
+	.pnm-link {
+	  text-decoration: none;
+	  background-color: #AAA;
+	  padding: 10px;
+	  font-family: sans-serif;
+	  font-size: 20px;
+	  font-weight: bold;
+	  color: #FFF;
+	}
+	.yes-button, .no-button {
+	  text-decoration: none;
+	  padding: 10px;
+	  font-family: sans-serif;
+	  font-size: 20px;
+	  font-weight: bold;
+	  color: #FFF;
+	  border: 0;
+	}
+	.yes-button {
+	  background-color: green;
+	  margin-right: 15px;
+	}
+	.no-button {
+	  background-color: red;
+	}
+  </style>
+</head>
+<body>
+  <p id="feedback"></p>
+  <input id="passcode-input-box" type="text" placeholder="Enter your code...">
+  <button id="signin-button" type="button">Enter Deliberations</button>
+  <div id="voting-frame"></div>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script src="js/brother-arr.js"></script>
+  <script src="js/deliberations.js"></script>
+</body>
+</html>
