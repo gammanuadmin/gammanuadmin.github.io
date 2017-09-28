@@ -1,0 +1,26 @@
+#calendar {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  margin: auto;
+  width: 70vw;
+}
+
+#calendar th,
+#calendar td {
+  border: 1px solid black;
+}
+
+#calendar th {
+  padding: 15px 0;
+}
+
+#calendar td {
+  height: 10vw;
+  text-align: center;
+}
+
+#title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
