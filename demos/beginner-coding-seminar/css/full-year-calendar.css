@@ -1,0 +1,31 @@
+details, summary {
+  outline: none;
+}
+
+.month-drop summary {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.month {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  margin: 15px 0;
+  width: 350px;
+}
+
+.month th,
+.month td {
+  border: 1px solid black;
+}
+
+.month th {
+  padding: 15px 0;
+}
+
+.month td {
+  height: 50px;
+  text-align: center;
+}
