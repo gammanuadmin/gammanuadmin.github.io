@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Sign In Button Functionality
   document.querySelector("#signin-button").addEventListener("click", function() {
-    const codeEntered = Math.round((Number.parseInt(document.querySelector("#passcode-input-box").value) - 5)/14);
+    const codeEntered = Math.round((Number.parseInt(document.querySelector("#passcode-input-box").value) - 11)/11);
     db.ref("brotherArr/" + codeEntered).once("value").then(function(snap) {
       if (!snap.val()) {
         document.querySelector("#feedback").innerHTML = "Code is invalid";
